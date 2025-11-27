@@ -4,23 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- PUT A TITLE IN HERE -->
-    <title>This is the demo</title>
-    <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
-    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
+    <title>Chocolate Personality Quiz</title>
+    <meta name="description" content="Discover your chocolate personality! Take our fun quiz to find out which chocolate type matches your unique personality." />
+   
     <link rel="stylesheet" href="styles/normalize.css" />
-    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
     
-    <!-- LINK TO YOUR STYLES -->
+    
     <link rel="stylesheet" href="styles/styles.css" />
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+    
     <script src="scripts/scripts.js" defer></script>
   </head>
   <body>
-    <!-- YOUR HTML GOES HERE -->
+  
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+    </nav>
 
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+    
+    <div id="quiz-container">
+      
+      
+      <section id="start-screen" class="screen active">
+        <div class="content-wrapper">
+          <h1>Discovering Your<br>Perfect Pair</h1>
+          <p class="tagline">Find your ideal chocolate match in just 3 questions!</p>
+          <button id="start-btn" class="btn-primary">Start Quiz</button>
+        </div>
+      </section>
+
+      <!-- QUESTION 1 -->
+      <section id="question1-screen" class="screen">
+        <div class="content-wrapper">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 33.33%;"></div>
+          </div>
+          <h2>Question 1 of 3</h2>
+          <h3>Choose Your Chocolate Base</h3>
+          <div class="question-image">
+            <img src="https://blog.skipscandies.com/wp-content/uploads/2019/05/white-Dark-and-Milk-chocolates.jpg?fit=1024%2C536&ssl=1" alt="White, milk, and dark chocolate" title="White, milk, and dark chocolate">
+          </div>
+          <div class="options-grid">
+            <button class="option-btn" data-question="1" data-value="milk">
+              <span class="option-emoji">🧡</span>
+              <span class="option-label">Milk</span>
+            </button>
+            <button class="option-btn" data-question="1" data-value="dark">
+              <span class="option-emoji">🤎</span>
+              <span class="option-label">Dark</span>
+            </button>
+            <button class="option-btn" data-question="1" data-value="white">
+              <span class="option-emoji">🤍</span>
+              <span class="option-label">White</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUESTION 2 -->
+      <section id="question2-screen" class="screen">
+        <div class="content-wrapper">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 66.66%;"></div>
+          </div>
+          <h2>Question 2 of 3</h2>
+          <h3>Pick Your Texture</h3>
+          <div class="question-image question-image-small">
+            <img src="https://media.istockphoto.com/id/157506007/photo/milk-chocolate-chunks.jpg?s=612x612&w=0&k=20&c=gUOS1APckPKIZymJY6H5qtFfcaoz_Npw_kKamtyA764=" alt="Chocolate textures" title="Chocolate textures">
+          </div>
+          <div class="options-grid">
+            <button class="option-btn" data-question="2" data-value="nuts-crunchy">
+              <span class="option-emoji">🥜</span>
+              <span class="option-label">Nutty and Crunchy</span>
+            </button>
+            <button class="option-btn" data-question="2" data-value="smooth-creamy">
+              <span class="option-emoji">✨</span>
+              <span class="option-label">Smooth and Creamy</span>
+            </button>
+            <button class="option-btn" data-question="2" data-value="plain">
+              <span class="option-emoji">🍫</span>
+              <span class="option-label">Plain</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUESTION 3 -->
+      <section id="question3-screen" class="screen">
+        <div class="content-wrapper">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 100%;"></div>
+          </div>
+          <h2>Question 3 of 3</h2>
+          <h3>Choose Your Flavor Profile</h3>
+          <div class="question-image">
+            <img src="https://www.machineryworld.com/wp-content/uploads/2019/07/imagesblogice-cream-flavours.jpg" alt="Different flavours" title="Different flavours">
+          </div>
+          <div class="options-grid">
+            <button class="option-btn" data-question="3" data-value="fruity">
+              <span class="option-emoji">🍓</span>
+              <span class="option-label">Fruity</span>
+            </button>
+            <button class="option-btn" data-question="3" data-value="spicy">
+              <span class="option-emoji">🌶️</span>
+              <span class="option-label">Spicy</span>
+            </button>
+            <button class="option-btn" data-question="3" data-value="boozy">
+              <span class="option-emoji">🍷</span>
+              <span class="option-label">Boozy</span>
+            </button>
+            <button class="option-btn" data-question="3" data-value="coffee">
+              <span class="option-emoji">☕</span>
+              <span class="option-label">Coffee</span>
+            </button>
+            <button class="option-btn" data-question="3" data-value="classic-sweet">
+              <span class="option-emoji">🍭</span>
+              <span class="option-label">Classic Sweet</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS SCREEN -->
+      <section id="results-screen" class="screen">
+        <div class="content-wrapper">
+          <h2>Your Chocolate Personality</h2>
+          <div id="result-content">
+            <div class="result-emoji"></div>
+            <h3 id="personality-title"></h3>
+            <p id="personality-description"></p>
+            <div class="pairing-section">
+              <h4>Perfect Pairing</h4>
+              <p id="pairing-suggestion"></p>
+            </div>
+            <div class="fun-fact">
+              <h4>Fun Fact</h4>
+              <p id="fun-fact"></p>
+            </div>
+          </div>
+          <div class="button-group">
+            <button id="retake-btn" class="btn-secondary">Take Quiz Again</button>
+            <button id="share-btn" class="btn-primary">Share Result</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </body>
 </html>
