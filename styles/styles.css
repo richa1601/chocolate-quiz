@@ -453,6 +453,8 @@ h1, h2, h3, h4 {
   border-radius: 16px;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 .document-item:hover {
@@ -470,6 +472,7 @@ h1, h2, h3, h4 {
 .document-item p {
   font-size: 1rem;
   color: #6D4C41;
+  overflow-wrap: break-word;
 }
 
 /* view buttons */
@@ -488,6 +491,8 @@ h1, h2, h3, h4 {
   box-shadow: 0 2px 8px rgba(62, 39, 35, 0.2);
   position: relative;
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .document-item a:hover {
@@ -499,18 +504,8 @@ h1, h2, h3, h4 {
 }
 
 .document-item p a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background: linear-gradient(135deg, #D4A574 0%, #8B4513 100%);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  border: 2px solid #3E2723;
-  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.2);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 
@@ -693,6 +688,7 @@ h1, h2, h3, h4 {
   .document-item {
     padding: 1.25rem;
     border-radius: 12px;
+    min-width: 0;
   }
   
   .document-item h3 {
@@ -711,6 +707,7 @@ h1, h2, h3, h4 {
     margin-top: 0.75rem;
     display: block;
     text-align: center;
+    width: 100%;
   }
   
   .main-nav {
