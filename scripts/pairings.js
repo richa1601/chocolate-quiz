@@ -394,7 +394,7 @@ allTheHTML = allTheHTML + '<div class="chocolate-group">';
 allTheHTML = allTheHTML + '<h2 class="chocolate-type-header">Dark Chocolate</h2>';
 allTheHTML = allTheHTML + '<div class="pairings-grid">';
 
-for (let i= 0; i < allPairings.length; i= i+ 1) {
+for (let index = 0; index < allPairings.length; index = index + 1) {
   let currentPairing = allPairings[index];
   if (currentPairing.chocolate === 'Dark') {
     allTheHTML = allTheHTML + buildCardHTML(currentPairing);
@@ -409,8 +409,8 @@ allTheHTML = allTheHTML + '<div class="chocolate-group">';
 allTheHTML = allTheHTML + '<h2 class="chocolate-type-header">Milk Chocolate</h2>';
 allTheHTML = allTheHTML + '<div class="pairings-grid">';
 
-for (let i = 0; i < allPairings.length; i = i + 1) {
-  let currentPairing = allPairings[i];
+for (let index = 0; index < allPairings.length; index = index + 1) {
+  let currentPairing = allPairings[index];
   if (currentPairing.chocolate === 'Milk') {
     allTheHTML = allTheHTML + buildCardHTML(currentPairing);
   }
@@ -424,8 +424,8 @@ allTheHTML = allTheHTML + '<div class="chocolate-group">';
 allTheHTML = allTheHTML + '<h2 class="chocolate-type-header">White Chocolate</h2>';
 allTheHTML = allTheHTML + '<div class="pairings-grid">';
 
-for (let i = 0; i< allPairings.length; i = i+ 1) {
-  let currentPairing = allPairings[i];
+for (let index = 0; index < allPairings.length; index = index + 1) {
+  let currentPairing = allPairings[index];
   if (currentPairing.chocolate === 'White') {
     allTheHTML = allTheHTML + buildCardHTML(currentPairing);
   }
