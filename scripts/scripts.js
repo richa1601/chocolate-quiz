@@ -71,12 +71,12 @@ const personalities = [
   {
     title:'Bold Explorer',
     description:'You\'re adventurous and love intense flavors! You\'re not afraid to try new things and enjoy complex taste experiences.',
-    image:'images/chocolate-wine-pairing.jpg',
+    image:'https://www.hillcountrychocolate.com/cdn/shop/articles/pairing-pleasure-is-chocolate-and-red-wine-a-good-combo-804059.jpg?v=1713829638',
     combinations: [
       {
         matches: ['dark','nuts-crunchy','spicy'],
         pairing:'Pair your dark chocolate with a bold red wine or espresso for the ultimate flavor experience.',
-        whyItWorks:'A full-bodied, bold red wine like a Zinfandel or Syrah works well with a rich, dark chocolate, as the "heaviness" of each item matches the other. Lighter red wines can be overpowered by intense dark chocolate.'
+        whyItWorks:'Dark chocolate contains antioxidants that can improve heart health!'
       },
       {
         matches: ['dark','plain','spicy'],
@@ -110,12 +110,12 @@ const personalities = [
       },
       {
         matches: ['dark','smooth-creamy','boozy'],
-        pairing:'Dark creamy chocolate  pairs perfectly with a rich port wine, rum, or brandy.',
-        whyItWorks:'The creamy texture softens the alcohol\'s intensity, while dark chocolate\'s bitterness complements the alcohol\'s tannins, creating a sophisticated and indulgent pairing.'
+        pairing:'Dark creamy chocolate with boozy notes pairs perfectly with a rich port wine or brandy.',
+        whyItWorks:'The creamy texture softens the alcohol\'s intensity, while dark chocolate\'s bitterness complements the wine\'s tannins, creating a sophisticated and indulgent pairing.'
       },
       {
         matches: ['dark','smooth-creamy','classic-sweet'],
-        pairing:'Dark creamy chocolate pairs beautifully with a warm cup of black tea or coffee.',
+        pairing:'Dark creamy chocolate with classic sweetness pairs beautifully with a warm cup of black tea or coffee.',
         whyItWorks:'The creamy texture enhances the chocolate\'s richness, while the classic sweetness balances dark chocolate\'s natural bitterness, creating a comforting and satisfying combination.'
       },
       {
@@ -133,7 +133,7 @@ const personalities = [
   {
     title:'Classic Loyalist',
     description:'You appreciate the familiar and comforting. You love traditional flavors that bring back happy memories.',
-    image:'images/chocolate-classic.jpg',
+    image:'https://www.thehighfivecompany.com/wp-content/uploads/2022/01/THFC_BlogPost_24012022_900x600.jpg',
     combinations: [
       {
         matches: ['milk','smooth-creamy','classic-sweet'],
@@ -190,7 +190,7 @@ const personalities = [
   {
     title:'Playful Dreamer',
     description:'You have refined taste and appreciate delicate, sophisticated flavors. You enjoy the finer things in life and live for fun.',
-    image:'images/chocolate-strawberries.jpg',
+    image:'https://ottawabaskets.ca/cdn/shop/files/BrocktonChampagne_ChocolateDippedStrawberriesGift_2000x.jpg?v=1729089316',
     combinations: [
       {
         matches: ['white','smooth-creamy','fruity'],
@@ -257,7 +257,7 @@ const personalities = [
   {
     title:'Refined Connoisseur',
     description:'You value simplicity and quality. You prefer pure, uncomplicated flavors that speak for themselves.',
-    image:'images/chocolate-coffee.jpg',
+    image:'https://stonestreetcoffee.com/cdn/shop/articles/flavored-chocolate-coffee_1600x.jpg?v=1726759186',
     combinations: [
       {
         matches: ['dark','plain','coffee'],
@@ -284,7 +284,7 @@ const personalities = [
   {
     title:'Playful Adventurer',
     description:'You love variety and excitement! You enjoy mixing textures and flavors for a fun, dynamic experience.',
-    image:'images/chocolate-chunks.jpg',
+    image:'https://media.istockphoto.com/id/157506007/photo/milk-chocolate-chunks.jpg?s=612x612&w=0&k=20&c=gUOS1APckPKIZymJY6H5qtFfcaoz_Npw_kKamtyA764=',
     combinations: [
       {
         matches: ['milk','nuts-crunchy','fruity'],
@@ -311,7 +311,7 @@ const personalities = [
   {
     title:'Quiet Edgy',
     description:'You take people by surprise. You love rich, decadent flavors that have a spark.',
-    image:'images/chocolate-types.jpg',
+    image:'https://blog.skipscandies.com/wp-content/uploads/2019/05/white-Dark-and-Milk-chocolates.jpg?fit=1024%2C536&ssl=1',
     combinations: [
       {
         matches: ['white','smooth-creamy','boozy'],
@@ -333,7 +333,7 @@ const personalities = [
   {
     title:'Intense Perfectionist',
     description:'You seek depth and intensity in everything. You appreciate complex flavors and aren\'t afraid of bold choices.',
-    image:'images/chocolate-intense.jpg',
+    image:'https://www.tasteofhome.com/wp-content/uploads/2025/02/GettyImages-2181217380-scaled-e1739904698896.jpg',
     combinations: [
       {
         matches: ['dark','smooth-creamy','coffee'],
@@ -355,7 +355,7 @@ const personalities = [
   {
     title:'Nostalgic Traditionalist',
     description:'You cherish simple pleasures and classic flavors. You find joy in the familiar and timeless.',
-    image:'images/chocolate-types.jpg',
+    image:'https://blog.skipscandies.com/wp-content/uploads/2019/05/white-Dark-and-Milk-chocolates.jpg?fit=1024%2C536&ssl=1',
     combinations: [
       {
         matches: ['milk','plain','classic-sweet'],
